@@ -2,33 +2,62 @@
   width: 1140px;
   margin: 0 auto;
 }
-
 .header_block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header_left {
-  letter-spacing: 0.06em;
   display: flex;
   justify-content: space-between;
-  width: 519px;
   align-items: center;
+  width: 500px;
 }
-.header-left a{
-  text-decoration:none;
-  color: #757575;
-  font-family: "Roboto";
+.header_left a {
+  text-decoration: none;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
+  
+  color: #212121;
 }
-.header-left a:hover {
+.header_left a:hover {
   color: #2196f3;
+}
+.header_links li{
+  margin: 20px 10px 20px 10px;
+  list-style-type: none;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.header_link {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header_link a {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  
+  color: #212121;
+}
+.header_link a:hover {
+  color: #2196f3;
+}
+.header_link img{
+  margin: 0px 10px 0px 10px;
 }
 .logo {
   font-family: "Raleway";
@@ -40,46 +69,9 @@
   letter-spacing: 0.03em;
   color: black;
 }
-
 .logo span {
   color: #2196f3;
 }
-
-.menu_links{
-  display: flex;
-  width: 281px;
-  justify-content:space-between;
-}
-.header_link {
-  list-style-type: none;
-  display: flex;
-  width: 281px;
-  text-decoration:none 
-}
-.header-link{
-  width: 307px;
-  justify-content: space-between;
-  display: flex;
-}
-.header-link a{
-  text-decoration:none;
-  color: #757575;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-}
-.header-link a:hover {
-  color: #2196f3;
-}
-
-.inf{
-  text-decoration:none;
-}
-
 .title { 
   color: #ffffff;
 }
@@ -93,11 +85,11 @@
   text-align: center;
   /* or 136% */
   letter-spacing: 0.06em;
-  
-
 }
 .promo {
-  background-color: #2f303a;
+  background-image: url(img/Img.svg);
+  background-repeat: no-repeat;
+
 
   height: 600px;
   margin: 0 auto;
