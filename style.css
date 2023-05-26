@@ -22,15 +22,17 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  transition-property: font-size;
-  transition-duration: 0.2s;
-  transform: scale(1.5,1.5);
+  
 
   color: #212121;
 }
 .header_left a:hover {
-  transform: scale(1.5,1.5);
   color: #2196f3;
+}
+.header_left li:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.2,1.2);
+  
   
 
 }
@@ -61,6 +63,8 @@
   color: #212121;
 }
 .header_link a:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.2,1.2);
   color: #2196f3;
 }
 .header_link img {
@@ -122,7 +126,27 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.about {
+.follow_the_link:hover {
+  animation-name: identifier;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes identifier {
+  0% {
+background-color: #2196f3;
+  }
+  50% {
+background-color: aqua;
+  }
+  75% {
+    background-color: aquamarine;
+  }
+  100% {
+background-color: #2196f3;
+  }
+} 
+
+ .about {
   width: 1140px;
   margin: 90px auto;
 }
@@ -232,8 +256,11 @@
   background-color: white;
   background-repeat: no-repeat;
   text-align: center;
-  transition-property: width , height;
-  transition-duration: 0.2s;
+  transition-duration: 1.5s;
+}
+.proba:hover {
+  transform: scale3d(1.2,1.2,1.5);
+  background-color: #2196f3;
 }
 .members {
   width: 1170px;
@@ -248,6 +275,7 @@
   font-weight: 500px;
   font-size: 16px;
   line-height: 19px;
+  perspective: 400px;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -313,7 +341,15 @@
 .logo2 span {
   color: #2196f3;
 }
-
+.fotoshki {
+  height: 260px;
+  width: 270px;
+}
+.fotoshki img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .kiev a {
   font-family: "Roboto";
   font-style: normal;
@@ -336,34 +372,6 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
-.team-card1 {
-  object-fit: cover;
-  background-image: url(/icons/1.svg);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.team-card2 {
-  object-fit: cover;
-  background-image: url(/icons/2.svg);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.team-card3 {
-  object-fit: cover;
-  background-image: url(/icons/3.svg);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.team-card4 {
-  object-fit: cover;
-  background-image: url(/icons/4.svg);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
 .pid_novig a {
   color: #212121;
   text-decoration: none;
@@ -379,3 +387,4 @@
   list-style-type: none;
   text-decoration: none;
 }
+member
