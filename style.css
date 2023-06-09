@@ -91,6 +91,10 @@ li {
   transform: scale(1.2,1.2);
   color: #2196f3;
 }
+.header_link i:hover,
+.header_link i:hover {
+ fill: #2196f3;
+}
 .header_link img {
   margin: 0px 10px 0px 10px;
 }
@@ -451,13 +455,30 @@ background-color: #2196f3;
   text-decoration: none;
 }
 .sotseti {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  flex-direction: row;
   margin-bottom: 30px;
   width: 206px;
   height: 44px;
 }
-.sotseti img {
-  flex-direction: column;
-  justify-content: space-between;
-  width: 44px;
-  height: 44px;
+
+.elipse>a { 
+  width: 44px; 
+  height: 44px; 
+  border-radius: 100%; 
+  background: #FFFFFF; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+
+.elipse>a:hover, 
+.elipse>a:hover svg path { 
+  background: #2196f3; 
+  opacity: 1; 
+  fill: #FFFFFF; 
 }
